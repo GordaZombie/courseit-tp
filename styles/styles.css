@@ -1,3 +1,87 @@
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  color: #fafafa;
+  margin: 0;
+}
 
+.header {
+  position: fixed;
+  margin-top: 0;
+  background: rgba(0, 0, 0, 0.801218);
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+}
+.header .logo {
+  margin-left: 3.5em;
+  margin-right: 2em;
+  height: 38px;
+}
+.header .nav-bar-list {
+  list-style: none;
+  display: flex;
+}
+.header .nav-bar-list .nav-link {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  color: #fafafa;
+  height: 38px;
+}
+.header .nav-bar-list .nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hero {
+  background-image: url(../assets/portada.png);
+  min-height: 100vh;
+  background-position: top;
+  background-size: cover;
+  min-width: 100vw;
+}
+.hero .content {
+  padding-top: 10em;
+  padding-left: 4.5em;
+  width: 100vw;
+  max-width: 40em;
+}
+.hero .content .hero-title {
+  font-size: 1.4em;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+.hero .content .hero-subtitle {
+  font-size: 6em;
+  font-weight: bold;
+  max-width: 600px;
+  line-height: 0.95em;
+}
+.hero .content .buttons-hero {
+  background-color: rgba(154, 152, 152, 0.5);
+  border-radius: 8px;
+  margin-right: 22px;
+  text-decoration: none;
+  color: #fafafa;
+  font-size: 1.2em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3em;
+  width: 9em;
+  font-weight: 300;
+}
+.hero .content .hero-text {
+  font-size: 1.3em;
+  margin-top: 19px;
+}
+.hero .content .hero-paragraph {
+  font-size: 1.4em;
+  margin-top: 15px;
+  line-height: 1.2em;
+  font-weight: lighter;
+}
 
 /*# sourceMappingURL=styles.css.map */
