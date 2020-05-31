@@ -45,10 +45,10 @@
     min-height: 100vh;
     background-position: top;
     background-size: cover;
-    min-width: 100vw;
+    min-width: 100%;
     
     .content {
-        padding-top: 10em;
+        padding-top: 12em;
         padding-left: 4.5em;
         width: 100vw;
         max-width: 40em;
@@ -88,10 +88,109 @@
 
         .hero-paragraph{
             font-size: 1.4em;
-            margin-top: 15px;
+            margin-top: 18px;
             line-height: 1.2em;
             font-weight: lighter;
         }
+    }
+
+}
+
+.images-wrapper {
+    background-color: #000000;
+    padding-left: 4.5em;
+    width: 100%;
+
+       .series-title {
+        font-size: 1.3em;
+        padding-top: 0.5em;
+        padding-bottom: 0.8em;
+        
+    }
+
+        .series-carrousel {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+
+        &::-webkit-scrollbar { 
+            width: 0;
+        }
+      
+        
+        .series-img {
+            margin-right: 10px;
+            scroll-snap-align: center;
+        }
+        
+    }
+
+}
+
+.images-wrapper2 {
+    background-color: #000000;
+    padding-left: 4.5em;
+    width: 100%;
+
+    .continued-title {
+        font-size: 1.3em;
+        padding-top: 0.5em;
+        padding-bottom: 0.8em;
+     }
+
+   .continued-carrousel {
+        display:flex;
+        
+        .continued-img {
+        margin-right: 10px;
+    }
+
+  }
+
+}
+     /*
+     .line {
+         background-color: #999999;
+         width: 10em;
+         height: 0.3em;
+         margin-left: 5em;
+         
+         margin-right: 5em;
+         
+        .line-progress {
+            height: 100%;
+            background-color: #E50914;
+           
+        }
+
+        
+     } */
+
+.images-wrapper3 {
+    background-color: #000000;
+    width: 100%;
+    
+
+    .added-carrousel {
+        display:flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+
+        &::-webkit-scrollbar { 
+            width: 0;
+        }
+
+
+    }
+
+    .added-title {
+        font-size: 1.3em;
+        padding-top: 0.5em;
+        padding-bottom: 0.8em;
+    }
+    .added-img {
+        margin-right: 10px;
+        scroll-snap-align: center;
     }
 
 }

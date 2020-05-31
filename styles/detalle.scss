@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: #fafafa; 
+    margin: 0; }
+
+.header {
+    position: fixed;
+    margin-top: 0;
+    background: rgba(0, 0, 0, 0.801218);
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+
+    .logo {
+        margin-left: 3.5em;
+        margin-right: 2em;
+        height: 38px;
+    }
+
+    .nav-bar-list {
+        list-style:none;
+        display: flex;
+
+        .nav-link {
+            
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px;
+            color: #fafafa;
+            height: 38px;
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.3);
+            }
+
+        }
+    }
+}
+
+.hero-friends {
+    background-image: url(../assets/friends1.png);
+    min-height: 100vh;
+    background-position: top;
+    background-size: cover;
+    min-width: 100%;
+    
+    .content-detalle {
+        padding-top: 12em;
+        padding-left: 4.5em;
+        width: 100vw;
+        max-width: 40em;
+
+        .hero-logo-friends {
+            width: 25em;
+            margin-top: -1em;
+           
+        }
+
+        .hero-serie {
+            margin-top: 2em;
+
+            .coincidencia {
+                color:#009c04;
+                font-weight: bolder; 
+                margin-right: 0.5em;
+            }
+
+            .year {
+                margin-right: 0.5em;
+            }
+
+            .edad {
+                border: 1px solid #fafafa;
+                border-radius: 5px;
+                padding: 3px;
+                padding-right: 5px;
+                padding-left: 5px;
+                margin-right: 0.5em;
+            }
+
+            .seassons {
+                font-weight: bolder;
+
+            }
+        }
+
+        
+        .buttons-hero-red{
+            background-color:#E50914;
+            border-radius: 8px;
+            margin-right: 22px;
+            text-decoration: none;
+            color: #fafafa;
+            font-size: 1.2em;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 3em;
+            width: 9em;
+            font-weight: 300;
+            margin-top: 2em;
+        }
+
+        .buttons-hero-list {
+            background-color: rgba(154, 152, 152, 0.5);
+            border-radius: 8px;
+            margin-right: 22px;
+            text-decoration: none;
+            color: #fafafa;
+            font-size: 1.2em;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 3em;
+            width: 9em;
+            font-weight: 300;
+            margin-top: 2em;
+        } 
+
+            .hero-sinopsis{
+            font-size: 1.4em;
+            margin-top: 2em;
+            line-height: 1.2em;
+            font-weight: lighter;
+        }
+    }
+
+}

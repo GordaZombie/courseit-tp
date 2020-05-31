@@ -35,31 +35,61 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.hero {
-  background-image: url(../assets/portada.png);
+.hero-friends {
+  background-image: url(../assets/friends1.png);
   min-height: 100vh;
   background-position: top;
   background-size: cover;
-  min-width: 100vw;
+  min-width: 100%;
 }
-.hero .content {
-  padding-top: 10em;
+.hero-friends .content-detalle {
+  padding-top: 12em;
   padding-left: 4.5em;
   width: 100vw;
   max-width: 40em;
 }
-.hero .content .hero-title {
-  font-size: 1.4em;
-  margin-bottom: 16px;
-  font-weight: bold;
+.hero-friends .content-detalle .hero-logo-friends {
+  width: 25em;
+  margin-top: -1em;
 }
-.hero .content .hero-subtitle {
-  font-size: 6em;
-  font-weight: bold;
-  max-width: 600px;
-  line-height: 0.95em;
+.hero-friends .content-detalle .hero-serie {
+  margin-top: 2em;
 }
-.hero .content .buttons-hero {
+.hero-friends .content-detalle .hero-serie .coincidencia {
+  color: #009c04;
+  font-weight: bolder;
+  margin-right: 0.5em;
+}
+.hero-friends .content-detalle .hero-serie .year {
+  margin-right: 0.5em;
+}
+.hero-friends .content-detalle .hero-serie .edad {
+  border: 1px solid #fafafa;
+  border-radius: 5px;
+  padding: 3px;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-right: 0.5em;
+}
+.hero-friends .content-detalle .hero-serie .seassons {
+  font-weight: bolder;
+}
+.hero-friends .content-detalle .buttons-hero-red {
+  background-color: #E50914;
+  border-radius: 8px;
+  margin-right: 22px;
+  text-decoration: none;
+  color: #fafafa;
+  font-size: 1.2em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3em;
+  width: 9em;
+  font-weight: 300;
+  margin-top: 2em;
+}
+.hero-friends .content-detalle .buttons-hero-list {
   background-color: rgba(154, 152, 152, 0.5);
   border-radius: 8px;
   margin-right: 22px;
@@ -72,14 +102,11 @@
   height: 3em;
   width: 9em;
   font-weight: 300;
+  margin-top: 2em;
 }
-.hero .content .hero-text {
-  font-size: 1.3em;
-  margin-top: 19px;
-}
-.hero .content .hero-paragraph {
+.hero-friends .content-detalle .hero-sinopsis {
   font-size: 1.4em;
-  margin-top: 15px;
+  margin-top: 2em;
   line-height: 1.2em;
   font-weight: lighter;
 }
