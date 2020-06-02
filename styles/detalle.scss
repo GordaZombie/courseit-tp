@@ -123,9 +123,63 @@
             .hero-sinopsis{
             font-size: 1.4em;
             margin-top: 2em;
-            line-height: 1.2em;
+            line-height: 1.5em;
             font-weight: lighter;
         }
     }
 
+}
+
+.detalle-wrapper {
+    background-color: #000000;
+    padding-left: 4.5em;
+    width: 100%;
+
+    .detalle-title {
+        font-size: 1.3em;
+        padding-top: 0.5em;
+        padding-bottom: 0.8em;
+        padding-top: 1em;
+    }
+
+    .episodios-carrousel {
+        display:flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 1em;
+        
+        &::-webkit-scrollbar { 
+            width: 0;
+        }
+
+        .episodio-container {
+           display: flex;
+           flex-direction: column;
+           margin-right: 10px;
+           align-content: center;
+          
+           
+
+            .friends.img {
+              margin-right: 10px;
+              scroll-snap-align: center;
+            }
+
+            .content-text {
+                
+                .episodio-title {
+                    font-size: 1em;
+                    margin-top: 0.7em;
+                }
+
+                .episodio-paragraph {
+                    margin-top: 0.7em;
+                    font-size: 0.8em;
+                    line-height: 1.5em;
+
+                }
+                
+            }
+        }
+    }
 }

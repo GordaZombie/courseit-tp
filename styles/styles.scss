@@ -1,8 +1,11 @@
+@import "detalle";
+
 * {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     color: #fafafa; 
-    margin: 0; }
+    margin: 0;
+}
 
 .header {
     position: fixed;
@@ -83,13 +86,13 @@
 
         .hero-text {
             font-size: 1.3em;
-            margin-top: 19px;
+            margin-top: 12px;
         }
 
         .hero-paragraph{
-            font-size: 1.4em;
-            margin-top: 18px;
-            line-height: 1.2em;
+            font-size: 1.3em;
+            margin-top: 12px;
+            line-height: 1.5em;
             font-weight: lighter;
         }
     }
@@ -117,7 +120,6 @@
             width: 0;
         }
       
-        
         .series-img {
             margin-right: 10px;
             scroll-snap-align: center;
@@ -140,34 +142,44 @@
 
    .continued-carrousel {
         display:flex;
-        
-        .continued-img {
-        margin-right: 10px;
-    }
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 1em;
 
-  }
-
-}
-     /*
-     .line {
-         background-color: #999999;
-         width: 10em;
-         height: 0.3em;
-         margin-left: 5em;
-         
-         margin-right: 5em;
-         
-        .line-progress {
-            height: 100%;
-            background-color: #E50914;
-           
+        &::-webkit-scrollbar { 
+            width: 0;
         }
 
-        
-     } */
+        .continued {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            
+            .continued-img {
+              margin-right: 10px;
+              scroll-snap-align: center;
+            }
+            .progress-bar {
+                margin: 0.6em 0;
+                background-color: #858585;
+                width: 221px;
+                height: 7px;
+               .progress {
+                   height: 7px;
+                   background-color: #E50914;
+               }
+            }
+        }
+
+    }
+
+}
+    
 
 .images-wrapper3 {
     background-color: #000000;
+    padding-left: 4.5em;
     width: 100%;
     
 
@@ -179,8 +191,6 @@
         &::-webkit-scrollbar { 
             width: 0;
         }
-
-
     }
 
     .added-title {
