@@ -104,6 +104,29 @@
   font-weight: 300;
   margin-top: 2em;
 }
+.hero-friends .content-detalle .fa-thumbs-o-up {
+  display: inline-flex;
+  height: 3em;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9em;
+  border: 2px solid #fafafa;
+  border-radius: 50%;
+  margin-right: 0.4em;
+  margin-left: 0.4em;
+  font-size: 1.2em;
+}
+.hero-friends .content-detalle .fa-thumbs-o-down {
+  display: inline-flex;
+  height: 3em;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9em;
+  border: 2px solid #fafafa;
+  border-radius: 50%;
+  margin-left: 0.4em;
+  font-size: 1.2em;
+}
 .hero-friends .content-detalle .hero-sinopsis {
   font-size: 1.4em;
   margin-top: 2em;
